@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 import json
 import pandas as pd
 import os
+import ast
+import time
+import random
 
 def scrape_factordaily(query, page=1):
     """
@@ -101,8 +104,19 @@ def load_json_data(json_filepath):
         print(f"Error loading JSON file {json_filepath}: {e}")
         return None
 
+def save_checkpoint(results):
+    """
+    Save/update a checkpoint file with the current results.
+    """
+    checkpoint_filename = "factordaily_results.json"
+    try:
+        with open(checkpoint_filename, "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=4)
+        print(f"Checkpoint updated: {checkpoint_filename}")
+    except Exception as e:
+        print(f"Error saving checkpoint: {e}")
+
 def main():
-    # Use the JSON file created from your CSV conversion
     json_filepath = "founders_companies.json"
     
     if not os.path.exists(json_filepath):
@@ -113,40 +127,61 @@ def main():
     if data is None:
         return
     
-    # Convert JSON data to a DataFrame for easy handling
     df = pd.DataFrame(data)
     
-    # Extract unique queries from columns "Founders" and "Company"
     queries = set()
+    # Process Founders column: separate out individual names if the entry is a list.
     if 'Founders' in df.columns:
-        founders = df['Founders'].dropna().unique().tolist()
-        queries.update(founders)
+        for entry in df['Founders'].dropna().unique().tolist():
+            try:
+                founder_list = ast.literal_eval(entry)
+                if isinstance(founder_list, list):
+                    for name in founder_list:
+                        if name:
+                            queries.add(name.strip())
+                else:
+                    queries.add(str(founder_list).strip())
+            except Exception as e:
+                print(f"Error parsing founders entry: {entry}. Error: {e}")
+                queries.add(entry.strip())
     else:
         print("Column 'Founders' not found in JSON data.")
     
+    # Process Company column: add each company name as a query.
     if 'Company' in df.columns:
         companies = df['Company'].dropna().unique().tolist()
-        queries.update(companies)
+        for company in companies:
+            if company and company.strip():
+                queries.add(company.strip())
     else:
         print("Column 'Company' not found in JSON data.")
     
-    queries = list(queries)
+    queries = [q for q in queries if q]
     print(f"Total unique queries to search (Founders & Companies): {len(queries)}")
     
-    # Scrape Factordaily for each query
     all_results = {}
+    processed_count = 0
+    
+   
+    save_checkpoint(all_results)
+    
     for query in queries:
         print(f"\n--- Scraping results for query: '{query}' ---")
-        posts = scrape_factordaily(query, page=1)   
+        posts = scrape_factordaily(query, page=1)
         if posts:
             all_results[query] = posts
+        
+        processed_count += 1
+        
+      
+        if processed_count % 2 == 0:
+            save_checkpoint(all_results)
+            
+            
     
-    # Save the scraped results to a JSON file
-    results_json_filepath = "factordaily_results.json"
-    with open(results_json_filepath, "w", encoding="utf-8") as f:
-        json.dump(all_results, f, ensure_ascii=False, indent=4)
     
-    print(f"Results saved to {results_json_filepath}")
+    save_checkpoint(all_results)
+    print("Scraping completed.")
 
 if __name__ == "__main__":
     main()

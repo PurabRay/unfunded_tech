@@ -1,0 +1,432 @@
+{
+    "SaralTech": [
+        {
+            "title": "Signal President Meredith Whittaker calls out agentic AI as having ‘profound’ security and privacy issues",
+            "link": "https://techcrunch.com/2025/03/07/signal-president-meredith-whittaker-calls-out-agentic-ai-as-having-profound-security-and-privacy-issues/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Sarah Perez",
+            "image": "N/A",
+            "excerpt": "Signal President Meredith Whittaker warned Friday that agentic AI could come with a risk to user privacy. Speaking onstage at the SXSW conference in"
+        },
+        {
+            "title": "Google co-founder Larry Page reportedly has a new AI startup",
+            "link": "https://techcrunch.com/2025/03/06/google-co-founder-larry-page-reportedly-has-a-new-ai-startup/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Google co-founder Larry Page is said to be building a new company called Dynatomics that's focused on applying AI to product manufacturing."
+        },
+        {
+            "title": "Scale AI is being investigated by the US Department of Labor",
+            "link": "https://techcrunch.com/2025/03/06/scale-ai-is-being-investigated-by-the-us-department-of-labor/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Charles Rollet",
+            "image": "N/A",
+            "excerpt": "Scale AI is being investigated by the U.S. Department of Labor for compliance with the Fair Labor Standards Act."
+        },
+        {
+            "title": "Hugging Face’s chief science officer worries AI is becoming ‘yes-men on servers’",
+            "link": "https://techcrunch.com/2025/03/06/hugging-faces-chief-science-officer-worries-ai-is-becoming-yes-men-on-servers/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Hugging Face co-founder and chief science officer Thomas Wolf thinks that AI today isn't capable of figuring out novel solutions like a human."
+        },
+        {
+            "title": "ChatGPT on macOS can now directly edit code",
+            "link": "https://techcrunch.com/2025/03/06/chatgpt-on-macos-can-now-directly-edit-code/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "ChatGPT, OpenAI's AI-powered chatbot platform, can now directly edit code — if you're on macOS, that is."
+        },
+        {
+            "title": "Mistral adds a new API that turns any PDF document into an AI-ready Markdown file",
+            "link": "https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Romain Dillet",
+            "image": "N/A",
+            "excerpt": "On Thursday French large language model (LLM) developer Mistral launched a new API for developers who handle complex PDF documents. Mistral OCR is an"
+        },
+        {
+            "title": "OpenAI reportedly plans to charge up to $20,000 a month for specialized AI ‘agents’",
+            "link": "https://techcrunch.com/2025/03/05/openai-reportedly-plans-to-charge-up-to-20000-a-month-for-specialized-ai-agents/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "OpenAI may be planning to charge up to $20,000 per month for specialized AI 'agents,' according to The Information."
+        }
+    ],
+    "ulai": [
+        {
+            "title": "Signal President Meredith Whittaker calls out agentic AI as having ‘profound’ security and privacy issues",
+            "link": "https://techcrunch.com/2025/03/07/signal-president-meredith-whittaker-calls-out-agentic-ai-as-having-profound-security-and-privacy-issues/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Sarah Perez",
+            "image": "N/A",
+            "excerpt": "Signal President Meredith Whittaker warned Friday that agentic AI could come with a risk to user privacy. Speaking onstage at the SXSW conference in"
+        },
+        {
+            "title": "Google co-founder Larry Page reportedly has a new AI startup",
+            "link": "https://techcrunch.com/2025/03/06/google-co-founder-larry-page-reportedly-has-a-new-ai-startup/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Google co-founder Larry Page is said to be building a new company called Dynatomics that's focused on applying AI to product manufacturing."
+        },
+        {
+            "title": "Scale AI is being investigated by the US Department of Labor",
+            "link": "https://techcrunch.com/2025/03/06/scale-ai-is-being-investigated-by-the-us-department-of-labor/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Charles Rollet",
+            "image": "N/A",
+            "excerpt": "Scale AI is being investigated by the U.S. Department of Labor for compliance with the Fair Labor Standards Act."
+        },
+        {
+            "title": "Hugging Face’s chief science officer worries AI is becoming ‘yes-men on servers’",
+            "link": "https://techcrunch.com/2025/03/06/hugging-faces-chief-science-officer-worries-ai-is-becoming-yes-men-on-servers/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Hugging Face co-founder and chief science officer Thomas Wolf thinks that AI today isn't capable of figuring out novel solutions like a human."
+        },
+        {
+            "title": "ChatGPT on macOS can now directly edit code",
+            "link": "https://techcrunch.com/2025/03/06/chatgpt-on-macos-can-now-directly-edit-code/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "ChatGPT, OpenAI's AI-powered chatbot platform, can now directly edit code — if you're on macOS, that is."
+        },
+        {
+            "title": "Mistral adds a new API that turns any PDF document into an AI-ready Markdown file",
+            "link": "https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Romain Dillet",
+            "image": "N/A",
+            "excerpt": "On Thursday French large language model (LLM) developer Mistral launched a new API for developers who handle complex PDF documents. Mistral OCR is an"
+        },
+        {
+            "title": "OpenAI reportedly plans to charge up to $20,000 a month for specialized AI ‘agents’",
+            "link": "https://techcrunch.com/2025/03/05/openai-reportedly-plans-to-charge-up-to-20000-a-month-for-specialized-ai-agents/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "OpenAI may be planning to charge up to $20,000 per month for specialized AI 'agents,' according to The Information."
+        }
+    ],
+    "Dhaval Udani": [
+        {
+            "title": "Signal President Meredith Whittaker calls out agentic AI as having ‘profound’ security and privacy issues",
+            "link": "https://techcrunch.com/2025/03/07/signal-president-meredith-whittaker-calls-out-agentic-ai-as-having-profound-security-and-privacy-issues/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Sarah Perez",
+            "image": "N/A",
+            "excerpt": "Signal President Meredith Whittaker warned Friday that agentic AI could come with a risk to user privacy. Speaking onstage at the SXSW conference in"
+        },
+        {
+            "title": "Google co-founder Larry Page reportedly has a new AI startup",
+            "link": "https://techcrunch.com/2025/03/06/google-co-founder-larry-page-reportedly-has-a-new-ai-startup/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Google co-founder Larry Page is said to be building a new company called Dynatomics that's focused on applying AI to product manufacturing."
+        },
+        {
+            "title": "Scale AI is being investigated by the US Department of Labor",
+            "link": "https://techcrunch.com/2025/03/06/scale-ai-is-being-investigated-by-the-us-department-of-labor/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Charles Rollet",
+            "image": "N/A",
+            "excerpt": "Scale AI is being investigated by the U.S. Department of Labor for compliance with the Fair Labor Standards Act."
+        },
+        {
+            "title": "Hugging Face’s chief science officer worries AI is becoming ‘yes-men on servers’",
+            "link": "https://techcrunch.com/2025/03/06/hugging-faces-chief-science-officer-worries-ai-is-becoming-yes-men-on-servers/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Hugging Face co-founder and chief science officer Thomas Wolf thinks that AI today isn't capable of figuring out novel solutions like a human."
+        },
+        {
+            "title": "ChatGPT on macOS can now directly edit code",
+            "link": "https://techcrunch.com/2025/03/06/chatgpt-on-macos-can-now-directly-edit-code/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "ChatGPT, OpenAI's AI-powered chatbot platform, can now directly edit code — if you're on macOS, that is."
+        },
+        {
+            "title": "Mistral adds a new API that turns any PDF document into an AI-ready Markdown file",
+            "link": "https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Romain Dillet",
+            "image": "N/A",
+            "excerpt": "On Thursday French large language model (LLM) developer Mistral launched a new API for developers who handle complex PDF documents. Mistral OCR is an"
+        },
+        {
+            "title": "OpenAI reportedly plans to charge up to $20,000 a month for specialized AI ‘agents’",
+            "link": "https://techcrunch.com/2025/03/05/openai-reportedly-plans-to-charge-up-to-20000-a-month-for-specialized-ai-agents/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "OpenAI may be planning to charge up to $20,000 per month for specialized AI 'agents,' according to The Information."
+        }
+    ],
+    "ram prasad": [
+        {
+            "title": "Disrupt SF 2018",
+            "link": "https://techcrunch.com/events/disrupt-sf-2018/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "N/A",
+            "image": "https://techcrunch.com/wp-content/uploads/2017/11/disrupt-sf-17-466x269.png?w=466",
+            "excerpt": ""
+        }
+    ],
+    "Vibe Gurukul": [
+        {
+            "title": "Signal President Meredith Whittaker calls out agentic AI as having ‘profound’ security and privacy issues",
+            "link": "https://techcrunch.com/2025/03/07/signal-president-meredith-whittaker-calls-out-agentic-ai-as-having-profound-security-and-privacy-issues/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Sarah Perez",
+            "image": "N/A",
+            "excerpt": "Signal President Meredith Whittaker warned Friday that agentic AI could come with a risk to user privacy. Speaking onstage at the SXSW conference in"
+        },
+        {
+            "title": "Google co-founder Larry Page reportedly has a new AI startup",
+            "link": "https://techcrunch.com/2025/03/06/google-co-founder-larry-page-reportedly-has-a-new-ai-startup/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Google co-founder Larry Page is said to be building a new company called Dynatomics that's focused on applying AI to product manufacturing."
+        },
+        {
+            "title": "Scale AI is being investigated by the US Department of Labor",
+            "link": "https://techcrunch.com/2025/03/06/scale-ai-is-being-investigated-by-the-us-department-of-labor/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Charles Rollet",
+            "image": "N/A",
+            "excerpt": "Scale AI is being investigated by the U.S. Department of Labor for compliance with the Fair Labor Standards Act."
+        },
+        {
+            "title": "Hugging Face’s chief science officer worries AI is becoming ‘yes-men on servers’",
+            "link": "https://techcrunch.com/2025/03/06/hugging-faces-chief-science-officer-worries-ai-is-becoming-yes-men-on-servers/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Hugging Face co-founder and chief science officer Thomas Wolf thinks that AI today isn't capable of figuring out novel solutions like a human."
+        },
+        {
+            "title": "ChatGPT on macOS can now directly edit code",
+            "link": "https://techcrunch.com/2025/03/06/chatgpt-on-macos-can-now-directly-edit-code/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "ChatGPT, OpenAI's AI-powered chatbot platform, can now directly edit code — if you're on macOS, that is."
+        },
+        {
+            "title": "Mistral adds a new API that turns any PDF document into an AI-ready Markdown file",
+            "link": "https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Romain Dillet",
+            "image": "N/A",
+            "excerpt": "On Thursday French large language model (LLM) developer Mistral launched a new API for developers who handle complex PDF documents. Mistral OCR is an"
+        },
+        {
+            "title": "OpenAI reportedly plans to charge up to $20,000 a month for specialized AI ‘agents’",
+            "link": "https://techcrunch.com/2025/03/05/openai-reportedly-plans-to-charge-up-to-20000-a-month-for-specialized-ai-agents/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "OpenAI may be planning to charge up to $20,000 per month for specialized AI 'agents,' according to The Information."
+        }
+    ],
+    "VYB": [
+        {
+            "title": "Disney+ ‘Hawkeye’ trailer shows Clint Barton’s past catching up with him",
+            "link": "https://techcrunch.com/2021/09/13/disney-hawkeye-trailer-shows-clint-bartons-past-catching-up-with-him/",
+            "date": "Sep 13, 2021",
+            "category": "N/A",
+            "author": "Kris Holt",
+            "image": "N/A",
+            "excerpt": "The next Marvel Cinematic Universe show will premiere on Disney+ in November and Hawkeye has a festive setting. Watch the trailer for the new show starring Jeremy Renner and Hailey Steinfeld now."
+        },
+        {
+            "title": "Google’s Self-Driving Car Tests Continue In Austin (And Don’t Worry, It Can Handle Deer)",
+            "link": "https://techcrunch.com/2015/08/31/yes-it-can-handle-deer/",
+            "date": "Aug 31, 2015",
+            "category": "Transportation",
+            "author": "Drew Olanoff",
+            "image": "https://techcrunch.com/wp-content/uploads/2015/08/screen-shot-2015-08-31-at-1-23-11-pm.png?w=608",
+            "excerpt": "Google announced in July that it'd be taking its self-driving car test on the road...to beautiful Austin. It has done just that, and the company looks to"
+        },
+        {
+            "title": "Digeo updates the Moxi HD DVR and releases the Moxi Mate",
+            "link": "https://techcrunch.com/2009/08/04/digeo-updates-the-moxi-hd-dvr-and-releases-the-moxi-mate/",
+            "date": "Aug 4, 2009",
+            "category": "Hardware",
+            "author": "Matt Burns",
+            "image": "N/A",
+            "excerpt": "Digeo is committed to the the Moxi HD DVR and has rolled out some updates. So far I like what I see as the updates addresses many of issues I had with the"
+        }
+    ],
+    "Anup Kiran": [
+        {
+            "title": "Signal President Meredith Whittaker calls out agentic AI as having ‘profound’ security and privacy issues",
+            "link": "https://techcrunch.com/2025/03/07/signal-president-meredith-whittaker-calls-out-agentic-ai-as-having-profound-security-and-privacy-issues/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Sarah Perez",
+            "image": "N/A",
+            "excerpt": "Signal President Meredith Whittaker warned Friday that agentic AI could come with a risk to user privacy. Speaking onstage at the SXSW conference in"
+        },
+        {
+            "title": "Google co-founder Larry Page reportedly has a new AI startup",
+            "link": "https://techcrunch.com/2025/03/06/google-co-founder-larry-page-reportedly-has-a-new-ai-startup/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Google co-founder Larry Page is said to be building a new company called Dynatomics that's focused on applying AI to product manufacturing."
+        },
+        {
+            "title": "Scale AI is being investigated by the US Department of Labor",
+            "link": "https://techcrunch.com/2025/03/06/scale-ai-is-being-investigated-by-the-us-department-of-labor/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Charles Rollet",
+            "image": "N/A",
+            "excerpt": "Scale AI is being investigated by the U.S. Department of Labor for compliance with the Fair Labor Standards Act."
+        },
+        {
+            "title": "Hugging Face’s chief science officer worries AI is becoming ‘yes-men on servers’",
+            "link": "https://techcrunch.com/2025/03/06/hugging-faces-chief-science-officer-worries-ai-is-becoming-yes-men-on-servers/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Hugging Face co-founder and chief science officer Thomas Wolf thinks that AI today isn't capable of figuring out novel solutions like a human."
+        },
+        {
+            "title": "ChatGPT on macOS can now directly edit code",
+            "link": "https://techcrunch.com/2025/03/06/chatgpt-on-macos-can-now-directly-edit-code/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "ChatGPT, OpenAI's AI-powered chatbot platform, can now directly edit code — if you're on macOS, that is."
+        },
+        {
+            "title": "Mistral adds a new API that turns any PDF document into an AI-ready Markdown file",
+            "link": "https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Romain Dillet",
+            "image": "N/A",
+            "excerpt": "On Thursday French large language model (LLM) developer Mistral launched a new API for developers who handle complex PDF documents. Mistral OCR is an"
+        },
+        {
+            "title": "OpenAI reportedly plans to charge up to $20,000 a month for specialized AI ‘agents’",
+            "link": "https://techcrunch.com/2025/03/05/openai-reportedly-plans-to-charge-up-to-20000-a-month-for-specialized-ai-agents/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "OpenAI may be planning to charge up to $20,000 per month for specialized AI 'agents,' according to The Information."
+        }
+    ],
+    "Jimit Bagadiya": [
+        {
+            "title": "Signal President Meredith Whittaker calls out agentic AI as having ‘profound’ security and privacy issues",
+            "link": "https://techcrunch.com/2025/03/07/signal-president-meredith-whittaker-calls-out-agentic-ai-as-having-profound-security-and-privacy-issues/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Sarah Perez",
+            "image": "N/A",
+            "excerpt": "Signal President Meredith Whittaker warned Friday that agentic AI could come with a risk to user privacy. Speaking onstage at the SXSW conference in"
+        },
+        {
+            "title": "Google co-founder Larry Page reportedly has a new AI startup",
+            "link": "https://techcrunch.com/2025/03/06/google-co-founder-larry-page-reportedly-has-a-new-ai-startup/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Google co-founder Larry Page is said to be building a new company called Dynatomics that's focused on applying AI to product manufacturing."
+        },
+        {
+            "title": "Scale AI is being investigated by the US Department of Labor",
+            "link": "https://techcrunch.com/2025/03/06/scale-ai-is-being-investigated-by-the-us-department-of-labor/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Charles Rollet",
+            "image": "N/A",
+            "excerpt": "Scale AI is being investigated by the U.S. Department of Labor for compliance with the Fair Labor Standards Act."
+        },
+        {
+            "title": "Hugging Face’s chief science officer worries AI is becoming ‘yes-men on servers’",
+            "link": "https://techcrunch.com/2025/03/06/hugging-faces-chief-science-officer-worries-ai-is-becoming-yes-men-on-servers/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "Hugging Face co-founder and chief science officer Thomas Wolf thinks that AI today isn't capable of figuring out novel solutions like a human."
+        },
+        {
+            "title": "ChatGPT on macOS can now directly edit code",
+            "link": "https://techcrunch.com/2025/03/06/chatgpt-on-macos-can-now-directly-edit-code/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "ChatGPT, OpenAI's AI-powered chatbot platform, can now directly edit code — if you're on macOS, that is."
+        },
+        {
+            "title": "Mistral adds a new API that turns any PDF document into an AI-ready Markdown file",
+            "link": "https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Romain Dillet",
+            "image": "N/A",
+            "excerpt": "On Thursday French large language model (LLM) developer Mistral launched a new API for developers who handle complex PDF documents. Mistral OCR is an"
+        },
+        {
+            "title": "OpenAI reportedly plans to charge up to $20,000 a month for specialized AI ‘agents’",
+            "link": "https://techcrunch.com/2025/03/05/openai-reportedly-plans-to-charge-up-to-20000-a-month-for-specialized-ai-agents/",
+            "date": "N/A",
+            "category": "N/A",
+            "author": "Kyle Wiggers",
+            "image": "N/A",
+            "excerpt": "OpenAI may be planning to charge up to $20,000 per month for specialized AI 'agents,' according to The Information."
+        }
+    ]
+}
