@@ -153,6 +153,7 @@ def is_relevant(article, query):
     return query_lower in title or query_lower in excerpt
 
 def main():
+    a = 0
     json_filepath = "founders_companies.json"
     
     if not os.path.exists(json_filepath):
@@ -165,7 +166,6 @@ def main():
     df = pd.DataFrame(data)
     
     queries = set()
-    
     
     if 'Founders' in df.columns:
         for entry in df['Founders'].dropna().unique().tolist():
@@ -183,19 +183,20 @@ def main():
     else:
         print("Column 'Founders' not found in JSON data.")
     
-   
     if 'Company' in df.columns:
         companies = df['Company'].dropna().unique().tolist()
         queries.update([company.strip() for company in companies if company.strip()])
+        print(str(a) + " many times executed")
+        a = a + 1
     else:
         print("Column 'Company' not found in JSON data.")
     
     queries = [q for q in queries if q]
-    print(f"Total unique queries to search (Founders & Companies): {len(queries)}")
+    total_queries = len(queries)
+    print(f"Total unique queries to search (Founders & Companies): {total_queries}")
 
     all_results = {}
     processed_count = 0
-
     
     save_checkpoint(all_results)
 
@@ -207,17 +208,19 @@ def main():
                 relevant_articles = [article for article in articles if is_relevant(article, query)]
                 if relevant_articles:
                     all_results[query] = relevant_articles
+                else:
+                    print(f"No relevant articles found for query: '{query}'")
+            else:
+                print(f"No articles found for query: '{query}'")
         except Exception as e:
             print(f"Error processing query '{query}': {e}")
         
         processed_count += 1
-        
+        print(f"Processed {processed_count} out of {total_queries} queries.")
         
         if processed_count % 2 == 0:
             save_checkpoint(all_results)
-        
-        
-    
+            print(f"processed={processed_count}")
     
     save_checkpoint(all_results)
     
