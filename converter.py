@@ -1,42 +1,39 @@
 import csv
 import json
+from tabulate import tabulate
 
-# Define input and output files
-input_file = "reddit.csv"  # Change this to your actual file
-output_file = "reddit2.csv"
+input_file = "reddit.csv"  # Your input CSV file
+output_file = "reddit2.csv"  # Output file to store the formatted table
 
-# Open the input file and process it
-with open(input_file, "r", encoding="utf-8") as infile, open(output_file, "w", newline="", encoding="utf-8") as outfile:
+rows = []
+
+# Read and parse the CSV
+with open(input_file, "r", encoding="utf-8") as infile:
     reader = csv.DictReader(infile)
-
-    # Define the column headers for the output file
-    fieldnames = ["query", "title", "url", "score", "comments"]
-    writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-    writer.writeheader()
-
     for row in reader:
         query = row["query"]
         results = row["results"]
-
         try:
-            # Convert the JSON-like string into a proper list of dictionaries
-            parsed_results = json.loads(results.replace("'", '"'))  # Replacing single quotes with double quotes
-
-            # Ensure it's a list
+            # Replace single quotes with double quotes for valid JSON and parse it
+            parsed_results = json.loads(results.replace("'", '"'))
             if not isinstance(parsed_results, list):
                 parsed_results = [parsed_results]
-
-            # Write each result as a separate row
             for result in parsed_results:
-                writer.writerow({
+                rows.append({
                     "query": query,
                     "title": result.get("title", ""),
                     "url": result.get("url", ""),
                     "score": result.get("score", ""),
-                    "comments": result.get("comments", ""),
+                    "comments": result.get("comments", "")
                 })
-
         except json.JSONDecodeError as e:
             print(f"Error parsing JSON for query '{query}': {e}")
 
-print(f"Formatted CSV saved as {output_file}.")
+# Use tabulate to create a grid-format table as a string
+table_string = tabulate(rows, headers="keys", tablefmt="grid")
+
+# Write the table string to the output file
+with open(output_file, "w", encoding="utf-8") as outfile:
+    outfile.write(table_string)
+
+print(f"Formatted output has been stored in {output_file}.")
