@@ -2,19 +2,19 @@ import csv
 import json
 from tabulate import tabulate
 
-input_file = "reddit.csv"  # Your input CSV file
-output_file = "reddit2.csv"  # Output file to store the formatted table
+input_file = "reddit.csv"   # Your input CSV file
+output_file = "reddit2.csv" # Output file where the table will be stored
 
 rows = []
 
-# Read and parse the CSV
+# Read and parse the CSV file
 with open(input_file, "r", encoding="utf-8") as infile:
     reader = csv.DictReader(infile)
     for row in reader:
         query = row["query"]
         results = row["results"]
         try:
-            # Replace single quotes with double quotes for valid JSON and parse it
+            # Replace single quotes with double quotes to make it valid JSON
             parsed_results = json.loads(results.replace("'", '"'))
             if not isinstance(parsed_results, list):
                 parsed_results = [parsed_results]
@@ -29,11 +29,11 @@ with open(input_file, "r", encoding="utf-8") as infile:
         except json.JSONDecodeError as e:
             print(f"Error parsing JSON for query '{query}': {e}")
 
-# Use tabulate to create a grid-format table as a string
-table_string = tabulate(rows, headers="keys", tablefmt="grid")
+# Create a grid-formatted table with clear lined columns using 'fancy_grid'
+table_string = tabulate(rows, headers="keys", tablefmt="fancy_grid")
 
-# Write the table string to the output file
+# Write the formatted table to the output file
 with open(output_file, "w", encoding="utf-8") as outfile:
     outfile.write(table_string)
 
-print(f"Formatted output has been stored in {output_file}.")
+print(f"Formatted table stored in {output_file}.")
