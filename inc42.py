@@ -3,12 +3,13 @@ import time
 import pickle
 import json
 import random
+import csv
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 
-# Use the same cookies file as before.
+# Cookie file name.
 cookies_file = "cookies.pkl"
 
 def login_and_save_cookies():
@@ -23,9 +24,10 @@ def login_and_save_cookies():
     print("Cookies saved successfully!")
     driver.quit()
 
-# If cookies.pkl doesn't exist, perform manual login.
-if not os.path.exists(cookies_file):
-    login_and_save_cookies()
+# Force a new cookie file: remove if exists and perform manual login.
+if os.path.exists(cookies_file):
+    os.remove(cookies_file)
+login_and_save_cookies()
 
 def create_driver(headless=True):
     options = uc.ChromeOptions()
@@ -43,6 +45,9 @@ def create_driver(headless=True):
     with open(cookies_file, "rb") as f:
         cookies = pickle.load(f)
         for cookie in cookies:
+            # Skip cookies with an invalid domain.
+            if cookie.get("domain") == "new-tab-page":
+                continue
             if "sameSite" in cookie:
                 cookie.pop("sameSite")
             cookie["domain"] = current_domain
@@ -137,6 +142,13 @@ def main():
     # Save the scraped results to a JSON file.
     with open("inc42_results.json", "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4)
+    
+    # Save the scraped results to a CSV file.
+    with open("inc42.csv", "w", newline='', encoding="utf-8") as csvfile:
+        fieldnames = ["title", "link", "date", "category", "excerpt"]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(results)
     
     print(json.dumps(results, indent=4))
     driver.quit()
