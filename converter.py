@@ -1,65 +1,36 @@
-import pandas as pd
-import json
 import csv
+import json
 
-def extract_list_from_dict(data_dict):
-    """
-    If the JSON data is a dict, try to extract a list from one of its values.
-    If more than one key contains a list, or none do, return None.
-    """
-    list_values = [value for value in data_dict.values() if isinstance(value, list)]
-    if len(list_values) == 1:
-        return list_values[0]
-    return None
+input_file = "reddit.csv"  # Change this to your actual CSV file name
+output_file = "reddit2.csv"
 
-def convert_json_to_csv(input_json_file, output_csv_file):
-    # Load JSON data from file
-    with open(input_json_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    # If data is a dict, try to extract a list from it, else convert dict to a list.
-    if isinstance(data, dict):
-        extracted = extract_list_from_dict(data)
-        if extracted is not None:
-            data = extracted
-        else:
-            # If no list found, treat the dict as a single record.
-            data = [data]
-    
-    # Check if the resulting data is a list.
-    if not isinstance(data, list):
-        print(f"Error: Expected a list after processing {input_json_file}, got {type(data)} instead.")
-        return
-    
-    # Handle list of dictionaries
-    if all(isinstance(entry, dict) for entry in data):
-        # Get all unique keys from the JSON to use as column names
-        all_keys = set()
-        for entry in data:
-            all_keys.update(entry.keys())
-        # Create DataFrame using the union of keys
-        structured_df = pd.DataFrame(data, columns=sorted(all_keys))
-    
-    # Handle list of strings
-    elif all(isinstance(entry, str) for entry in data):
-        # Create a DataFrame with a single column "value"
-        structured_df = pd.DataFrame(data, columns=["value"])
-    
-    else:
-        print(f"Error: The list in {input_json_file} contains mixed or unsupported types.")
-        return
+with open(input_file, "r", encoding="utf-8") as infile, open(output_file, "w", newline="", encoding="utf-8") as outfile:
+    reader = csv.DictReader(infile)
+    fieldnames = ["query", "title", "url", "score", "comments"]
+    writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+    writer.writeheader()
 
-    # Save the DataFrame to CSV with all columns quoted
-    structured_df.to_csv(output_csv_file, index=False, quoting=csv.QUOTE_ALL)
-    print(f"CSV file saved as {output_csv_file}")
+    for row in reader:
+        query = row["query"]
+        results = row["results"]
 
-# Example usage for multiple files:
-file_mappings = [
-    ("reddit_scraped_data.json", "reddit2.csv"),
-    ("factordaily_results.json", "factordaily2.csv"),
-    ("techcrunch_articles_checkpoint.json", "techcrunch2.csv"),
-    ("yourstory_funders_companies_results.json", "yourstory2.csv"),
-]
+        try:
+            # Convert the JSON-like string into a Python list of dictionaries
+            parsed_results = json.loads(results.replace("'", '"'))  # Replace single quotes with double quotes
+            if not isinstance(parsed_results, list):  # Ensure it's a list
+                parsed_results = [parsed_results]
 
-for input_json, output_csv in file_mappings:
-    convert_json_to_csv(input_json, output_csv)
+            # Write each result with the associated query
+            for result in parsed_results:
+                writer.writerow({
+                    "query": query,
+                    "title": result.get("title", ""),
+                    "url": result.get("url", ""),
+                    "score": result.get("score", ""),
+                    "comments": result.get("comments", ""),
+                })
+        
+        except json.JSONDecodeError as e:
+            print(f"Error parsing JSON for query '{query}': {e}")
+
+print("CSV file formatted successfully.")
